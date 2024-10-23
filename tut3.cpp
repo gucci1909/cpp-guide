@@ -25,9 +25,7 @@ int main(){
     account.upi = '1';
     cout << account.cash << endl; // now I will get garbage value here for cash because union do memory management and changes only one datatype at a time (memory is shared)
     cout << account.upi << endl;
-
-
-
+    
     ekr name12;
     name12.eID = 13;
     cout << name12.eID << endl;
