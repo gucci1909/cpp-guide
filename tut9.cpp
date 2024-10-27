@@ -17,6 +17,10 @@ public:
     {
         cout << count << endl;
     }
+    static void getCount(void){
+        // cout << id; // cannot access id because it is not static;
+        cout << count;
+    }
 };
 
 int Employee ::count;
@@ -27,6 +31,7 @@ int main()
     Employee umang, vidur, deepak;
     umang.setData();
     umang.getData();
+    Employee::getCount(); // how to call static function
 
     vidur.setData();
     vidur.getData();
